@@ -1,0 +1,196 @@
+$color1 : #262626; /*This is the backgroundcolor on the footer and the body*/
+$color2 : #0F0F0F; /*This is used for top menu background*/
+$color3 : #FF9400; /*Used for background on items like shopingcart, active link, hovered links*/
+
+
+$textcolor1 : #787878; /*This is used for main text on header menu*/
+$textcolor2 : #C6B298; /*This is used for the footer*/
+header {
+    font-family: Georgia,Times,"Times New Roman",serif;
+    
+    background-color: $color2;
+    color:$textcolor1;
+    width: 100%;
+    
+    /*Shadow on the header*/
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+
+    a,
+    a:active,
+    a:focus {
+        text-decoration: none;
+        color:$textcolor1;
+    }
+    a.active, a:hover {
+        text-decoration: none;
+        color:$color3;
+    }
+
+    #top-header-right-menu {
+        padding:10px;
+        height:100px;
+
+        ul {
+            list-style: none;
+
+            li {
+                display:inline;
+                margin-left: 10px;
+            }
+        }
+    }
+    #header {
+        #logo img{
+            width:100px;
+        }
+        #search-bar {
+            height:60px;
+            input {
+                height:100%;
+                font-size:30px;
+                background-color: $color2;
+                color:$textcolor1;
+                font-style: italic;
+                border-style:none;
+                border-left:solid;
+                border-bottom:solid;
+                border-width:1px;
+                border-radius: 0;
+            }
+            input:focus {
+                border-style:solid;
+            }
+            span {
+                font-size:30px;
+                padding: 10px 40px 0 0;
+            }
+        }
+        #nav-menu {
+            padding: 15px 0px;
+            ul {
+                list-style:none;
+                float:left;
+                padding:0;
+            }
+            li{
+                display:inline;
+                margin-right:40px;
+                a {
+                    text-transform: uppercase;
+                    height: 10px;
+                }
+            }
+        }
+            /*Shopping cart, wich goes half ower header*/
+        #shoping-cart {
+            z-index: 99999;
+            margin-bottom:-50px;
+            float:right;
+            text-align: center;
+            padding-top:25px;
+            background-color: $color3;
+            font-size: 30px;
+            color:white;
+            border-radius: 100;
+            width:80px;
+            height:80px;
+            position:relative;
+
+            /*Shadow for the circle*/
+            -webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+
+            /*The square with number of items in cart*/
+
+            #cart-num {
+                position:absolute;
+                top:0;
+                font-size: 15px;
+                background-color: #D9534F;
+            }
+        }
+        #shoping-cart:hover {
+            color:#D9534F;
+        }
+    }
+}
+
+body {
+    background-color: $color1;
+    position: relative;
+    
+    > .row {
+        background-color:white;
+    }
+    
+    #hidden-menu {
+        display:none;
+        z-index: 10;
+        padding:0;
+        .panel {
+            margin:o;
+            border-radius: 0;
+            
+            ul {
+                list-style:none;
+            }
+            
+            .li-header {
+                color:grey;
+                border-bottom:solid 1px grey;
+            }
+        }
+    }
+    
+    
+    /**********************
+    
+    HOME STYLE STARS HERE
+    
+    ************************/
+    #home {
+        #content {
+            padding:0;
+        }
+    }
+    
+    /**********************
+    
+    SUPPORT STYLE STARS HERE
+    
+    ************************/
+    
+    #support {
+        height:200px;
+    }
+}
+
+footer {
+    background-color: #262626;
+    color: $textcolor2;
+    padding: 20px 0;
+    
+    a {
+        color: $textcolor2; 
+    }
+    
+    #footer-middle {
+        border-left: solid;
+        border-right:solid;
+        border-width: 1px;
+        
+            a:hover {
+                text-decoration: none;
+                color: $color3;
+            }
+        #footer-links {
+            margin-top:15px;
+            a {
+                padding: 0 5px;
+            }
+        }
+    }
+}

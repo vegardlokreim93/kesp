@@ -1,0 +1,141 @@
+/*This is the backgroundcolor on the footer and the body*/
+/*This is used for top menu background*/
+/*Used for background on items like shopingcart, active link, hovered links*/
+/*This is used for main text on header menu*/
+/*This is used for the footer*/
+header {
+  font-family: Georgia,Times,"Times New Roman",serif;
+  background-color: #0F0F0F;
+  color: #787878;
+  width: 100%;
+  /*Shadow on the header*/
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75); }
+  header a,
+  header a:active,
+  header a:focus {
+    text-decoration: none;
+    color: #787878; }
+  header a.active, header a:hover {
+    text-decoration: none;
+    color: #FF9400; }
+  header #top-header-right-menu {
+    padding: 10px;
+    height: 100px; }
+    header #top-header-right-menu ul {
+      list-style: none; }
+      header #top-header-right-menu ul li {
+        display: inline;
+        margin-left: 10px; }
+  header #header {
+    /*Shopping cart, wich goes half ower header*/ }
+    header #header #logo img {
+      width: 100px; }
+    header #header #search-bar {
+      height: 60px; }
+      header #header #search-bar input {
+        height: 100%;
+        font-size: 30px;
+        background-color: #0F0F0F;
+        color: #787878;
+        font-style: italic;
+        border-style: none;
+        border-left: solid;
+        border-bottom: solid;
+        border-width: 1px;
+        border-radius: 0; }
+      header #header #search-bar input:focus {
+        border-style: solid; }
+      header #header #search-bar span {
+        font-size: 30px;
+        padding: 10px 40px 0 0; }
+    header #header #nav-menu {
+      padding: 15px 0px; }
+      header #header #nav-menu ul {
+        list-style: none;
+        float: left;
+        padding: 0; }
+      header #header #nav-menu li {
+        display: inline;
+        margin-right: 40px; }
+        header #header #nav-menu li a {
+          text-transform: uppercase;
+          height: 10px; }
+    header #header #shoping-cart {
+      z-index: 99999;
+      margin-bottom: -50px;
+      float: right;
+      text-align: center;
+      padding-top: 25px;
+      background-color: #FF9400;
+      font-size: 30px;
+      color: white;
+      border-radius: 100;
+      width: 80px;
+      height: 80px;
+      position: relative;
+      /*Shadow for the circle*/
+      -webkit-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.75);
+      /*The square with number of items in cart*/ }
+      header #header #shoping-cart #cart-num {
+        position: absolute;
+        top: 0;
+        font-size: 15px;
+        background-color: #D9534F; }
+    header #header #shoping-cart:hover {
+      color: #D9534F; }
+
+body {
+  background-color: #262626;
+  position: relative;
+  /**********************
+  
+  HOME STYLE STARS HERE
+  
+  ************************/
+  /**********************
+  
+  SUPPORT STYLE STARS HERE
+  
+  ************************/ }
+  body > .row {
+    background-color: white; }
+  body #hidden-menu {
+    display: none;
+    z-index: 10;
+    padding: 0; }
+    body #hidden-menu .panel {
+      margin: o;
+      border-radius: 0; }
+      body #hidden-menu .panel ul {
+        list-style: none; }
+      body #hidden-menu .panel .li-header {
+        color: grey;
+        border-bottom: solid 1px grey; }
+  body #home #content {
+    padding: 0; }
+  body #support {
+    height: 200px; }
+
+footer {
+  background-color: #262626;
+  color: #C6B298;
+  padding: 20px 0; }
+  footer a {
+    color: #C6B298; }
+  footer #footer-middle {
+    border-left: solid;
+    border-right: solid;
+    border-width: 1px; }
+    footer #footer-middle a:hover {
+      text-decoration: none;
+      color: #FF9400; }
+    footer #footer-middle #footer-links {
+      margin-top: 15px; }
+      footer #footer-middle #footer-links a {
+        padding: 0 5px; }
+
+/*# sourceMappingURL=style.css.map */
