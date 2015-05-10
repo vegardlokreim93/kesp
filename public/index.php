@@ -1,6 +1,7 @@
 <?php
 /**
- * CodeIgniter aka Helge og Vegard
+ * CodeIgniter 
+ * aka Helge og Vegard LOOOOL
  *
  * An open source application development framework for PHP
  *
