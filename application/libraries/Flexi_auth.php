@@ -33,7 +33,8 @@
 */
 
 // Load the flexi auth Lite library to allow it to be extended.
-load_class('Flexi_auth_lite', 'libraries', FALSE);
+$CI =& get_instance();
+$CI->load->library('Flexi_auth_lite');
 
 class Flexi_auth extends Flexi_auth_lite
 {

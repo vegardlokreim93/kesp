@@ -1,0 +1,7 @@
+-Lage innloggingssiden
+-Lage registrer bruker siden / er en del av punkt over
+-Få innlogging til å fungere
+-Lage registrer bruker funksjonen
+    -Sjekke at bruker ikke eksiterer
+    -Sjekke att passordet er innenfor
+    -Virifikasjon av email
