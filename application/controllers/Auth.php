@@ -10,7 +10,8 @@ class Auth extends MY_Controller {
             $this->load->helper('form');
             $this->load->library('form_validation');
             
-        }
+        } 
+        
         
 	public function index()
 	{
