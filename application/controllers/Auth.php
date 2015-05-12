@@ -9,6 +9,7 @@ class Auth extends MY_Controller {
         
             $this->load->helper('form');
             $this->load->library('form_validation');
+            
         }
         
 	public function index()
@@ -51,6 +52,10 @@ class Auth extends MY_Controller {
                     redirect('Home');
                 }
             }
-            
+        }
+        
+        public function logout() {
+            $this->session->sess_destroy();
+            redirect('home');
         }
 }
