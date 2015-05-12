@@ -120,40 +120,8 @@ body {
   body #support {
     height: 200px; }
   body #auth #login-form {
-    background-color: #F7F7F7;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    -webkit-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.75); }
-    body #auth #login-form .nav-tabs > li.active > a, body #auth #login-form .nav-tabs > li.active > a:focus, body #auth #login-form .nav-tabs > li.active > a:hover {
-      background-color: #efeded; }
-    body #auth #login-form .nav-tabs > li, body #auth #login-form .nav-pills > li {
-      float: left;
-      width: 50%;
-      display: inline-block;
-      *display: inline;
-      /* ie7 fix */
-      zoom: 1;
-      /* hasLayout ie7 trigger */ }
-    body #auth #login-form .nav-tabs, body #auth #login-form .nav-pills {
-      text-align: center; }
-    body #auth #login-form .tab-content .tab-pane {
-      padding: 10px 0 0 0; }
-    body #auth #login-form #login .row {
-      padding: 10px 20px; }
-    body #auth #login-form #login hr {
-      border-color: #CCCCCC;
-      width: 100%; }
-    body #auth #login-form #login #facebook-button {
-      background-color: #428BCA;
-      color: white;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: bold;
-      width: 100%; }
-    body #auth #login-form #login #facebook-button:hover {
-      background-color: #3276B1; }
+    border-style: solid;
+    min-height: 100px; }
 
 footer {
   background-color: #262626;

@@ -9,7 +9,7 @@ class MY_Controller extends CI_Controller {
         $this->auth = new stdClass;
         $this->load->library('flexi_auth');
         
-        if(!$this->flexi_auth->is_logged_in())
+        if(!$this->flexi_auth->is_logged_in() && $this->uri->segment(1) != 'auth')
         {
             redirect('auth');
         }

@@ -202,7 +202,7 @@
 	 * 
 	 * Note: The only valid columns are the users email address (Default column name 'uacc_email') or username (Default column name'uacc_username').
 	*/ 
-	$config['database']['settings']['identity_cols'] = array('uacc_email', 'uacc_username');
+	$config['database']['settings']['identity_cols'] = array('uacc_email');
 	
 	/**
 	 * User Search Query Columns
@@ -245,7 +245,7 @@
 	 * Auth Session Name
 	 * Set the root auth session name saved as an array in the CI session, all other flexi auth session data is then stored within this array.
 	*/ 
-	$config['sessions']['name'] = 'flexi_auth';
+	$config['sessions']['name'] = 'auth_session';
 		
 	/**
 	 * Primary User Indentifier Session
@@ -258,7 +258,7 @@
 	 * User Account Data Sessions
 	 * Used for performing various CRUD functions.
 	*/
-	$config['sessions']['user_id'] = 'user_id';
+	$config['sessions']['user_id'] = 'id';
 	$config['sessions']['is_admin'] = 'admin';
 	$config['sessions']['group'] = 'group';
 	$config['sessions']['privileges'] = 'privileges';
@@ -439,7 +439,7 @@
 	 *	Do NOT change this salt once users have started registering accounts as their passwords will not work without the original salt.
 	 *	CHANGE THE DEFAULT STATIC SALT SET BELOW TO YOUR OWN RANDOM SET OF CHARACTERS.
 	*/
-	$config['security']['static_salt'] = 'change-me!';
+	$config['security']['static_salt'] = '2706e376d4bae4f4fd98b1d80e4e5ab1';
 	
 	/**
 	 * Set whether a salt is stored in the database and then used for password and hash token generation.
@@ -580,7 +580,7 @@
      * Options: array('user','group'), array('user'), array('group')
      * Default: individual user privileges only.
      */
-    $config['settings']['privilege_sources'] = array('user');
+    $config['settings']['privilege_sources'] = array('user', 'group');
 
 	
 	###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++###	
@@ -653,16 +653,16 @@
 	*/
 
 	// Message Start Delimiter
-	$config['messages']['delimiters']['status_prefix'] = '<p class="status_msg">';
+	$config['messages']['delimiters']['status_prefix'] = '<div class="alert alert-info text-center" role="alert">';
 	
 	// Message End Delimiter
-	$config['messages']['delimiters']['status_suffix'] = '</p>';
+	$config['messages']['delimiters']['status_suffix'] = '</div>';
 	
 	// Error Start Delimiter
-	$config['messages']['delimiters']['error_prefix'] = '<p class="error_msg">';
+	$config['messages']['delimiters']['error_prefix'] = '<div class="alert alert-danger text-center" role="alert">';
 	
 	// Error End Delimiter
-	$config['messages']['delimiters']['error_suffix'] = '</p>';
+	$config['messages']['delimiters']['error_suffix'] = '</div>';
 
 	###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++###
 

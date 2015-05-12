@@ -166,6 +166,59 @@ body {
     #support {
         height:200px;
     }
+    
+    #auth {
+        #login-form {
+            
+            background-color: #F7F7F7;
+            border-radius: 20px;
+            margin-top:20px;
+            margin-bottom: 20px;
+            
+            -webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+            
+            .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+                background-color:#efeded;
+            }
+            
+           .nav-tabs > li, .nav-pills > li {
+                float:left;
+                width:50%;
+                display:inline-block;
+                *display:inline; /* ie7 fix */
+                 zoom:1; /* hasLayout ie7 trigger */
+            }
+
+            .nav-tabs, .nav-pills {
+                text-align:center;
+            }
+            .tab-content .tab-pane {
+                padding: 10px 0 0 0;
+            }
+            
+            #login {
+                .row {
+                    padding: 10px 20px;
+                }
+                hr {
+                    border-color:#CCCCCC;
+                    width:100%;
+                }
+                #facebook-button {
+                    background-color: #428BCA;
+                    color:white;
+                    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-weight: bold;
+                    width: 100%;
+                }
+                #facebook-button:hover {
+                    background-color: #3276B1;
+                }
+            }
+        }
+    }
 }
 
 footer {

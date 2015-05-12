@@ -2332,7 +2332,7 @@ class Flexi_auth_model extends Flexi_auth_lite_model
 			'value'  => '',
 			'expire' => ''
 		);
-		set_cookie($ci_session);	
+		$this->session->set_userdata($ci_session);	
 	}
 }
 
