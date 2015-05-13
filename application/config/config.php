@@ -23,7 +23,7 @@ if($_SERVER['DOCUMENT_ROOT'] == '/Applications/MAMP/htdocs/git_kesp/kesp/public'
 {
     $config['base_url'] = 'http://localhost/';
 }else{
-    $config['base_url'] = ''; //VEGARD LEGG INN HER
+    $config['base_url'] = 'http://localhost/kesp/public/'; //VEGARD LEGG INN HER
 }
 /*
 |--------------------------------------------------------------------------
