@@ -18,6 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
+
 if($_SERVER['DOCUMENT_ROOT'] == '/Applications/MAMP/htdocs/git_kesp/kesp/public')
 {
     $config['base_url'] = 'http://localhost/';
