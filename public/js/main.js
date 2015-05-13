@@ -1,7 +1,9 @@
-$( document ).ready(function() {
+$(document).ready(function() {
+
+
+
 //Function to hide/show hidden-menu
-    $( "#activate-hidden" ).hover(
-        function() {
+    $( "#activate-hidden" ).click( function() {
             event.preventDefault();
             $("#hidden-menu").toggle();
             var height = $("#hidden-menu").outerHeight(); //Get the height of hidden menu, to adjust body
@@ -11,5 +13,7 @@ $( document ).ready(function() {
             }else{
                 $("#content").css('margin-top', '-'+height+'px');
             }
+     
     });
+    
 }); 
